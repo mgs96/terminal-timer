@@ -1,6 +1,6 @@
-# console-timer
+# terminal-timer
 
-needs imrovement
+needs improvement
 
 ## todo
 
