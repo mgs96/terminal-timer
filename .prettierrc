@@ -1,5 +1,8 @@
-{
-  "semi": true,
-  "singleQuote": false,
-  "trailingComma": "es5"
-}
+---
+  semi: true
+  trailingComma: "es5"
+  bracketSpacing: true
+  arrowParens: "avoid"
+  parser: "flow"
+  useTabs: true
+  tabWidth: 4

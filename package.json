@@ -8,14 +8,25 @@
     "start": "node app.js",
     "prettier": "prettier --write *.js"
   },
+  "bin": {
+    "timer": "app.js"
+  },
   "keywords": [
     "timer",
-    "console"
+    "terminal"
   ],
   "author": "Ammar",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
     "figlet": "^1.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammarbinfaisal/terminal-timer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ammarbinfaisal/terminal-timer/issues"
+  },
+  "homepage": "https://github.com/ammarbinfaisal/terminal-timer#readme"
 }
