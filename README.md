@@ -2,6 +2,11 @@
 
 needs improvement
 
+## to use this
+* clone the repo
+* `cd terminal-timer`
+* run `node app.js` <time>` to have timer in the terminal
+
 ## todo
 
 * allow to be used by other apps(export a function from app.js) #1
