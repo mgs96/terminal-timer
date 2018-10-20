@@ -15,6 +15,7 @@
   "author": "Ammar",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.1",
     "figlet": "^1.2.1"
   }
 }
