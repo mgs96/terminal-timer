@@ -2,6 +2,19 @@
 const figlet = require("figlet");
 const chalk = require("chalk");
 const cliArgsHandler = require("./cli");
+const Configstore = require('configstore');
+const pkg = require('./package.json');
+
+const conf = new Configstore (
+	pkg.name,
+	{
+		font: {
+			name: 'roman',
+			horizontalLayout: "full",
+			verticalLayout: "fitted"
+		}	
+	}
+);
 
 const parsed =
 	process.argv.length > 2
@@ -23,9 +36,9 @@ const print = () =>
 	figlet(
 		formatTime(currentSec),
 		{
-			font: font || "Roman",
-			horizontalLayout: "full",
-			verticalLayout: "fitted",
+			font: font || conf.get("font.name"),
+			horizontalLayout: conf.get("font.horizontalLayout"),
+			verticalLayout: conf.get("font.verticalLayout"),
 		},
 		(err, figSecond) => {
 			if (err) {
